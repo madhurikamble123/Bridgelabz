@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class MaximumNoArray {
+    public static void main(String[] args) {
+        System.out.println("maximum number is :" + Max());
+    }
+    static int[] arr = {10, 5, 8, 9, 20};
+    static int Max() {
+        int i;
+        int max = arr[0];
+        for (i = 1; i < arr.length; i++)
+            if (arr[i] > max)
+                max = arr[i];
+        return max;
+    }
+}
