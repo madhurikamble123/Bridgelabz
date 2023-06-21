@@ -1,0 +1,29 @@
+package com.bridelabzPractice;
+
+public class Flipcoin {
+    private static int tails;
+
+    public static void main(String[] args) {
+        {
+            int loopCount = 1;
+            int numFlips = 10;
+            double result;
+            int heads = 0;
+
+            while (loopCount < numFlips) {
+                result = Math.random();
+                if (result <= .5) {
+                    heads++;
+                }
+                loopCount++;
+            }
+
+            double percentHeads = heads / numFlips * 100;
+            double percentTails = (numFlips - tails) / numFlips * 100;
+            System.out.println("theentage of heads is: " +percentHeads);
+
+            System.out.println("theentage of tails is: " +percentTails);
+
+        }
+    }
+}
