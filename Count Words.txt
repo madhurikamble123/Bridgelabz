@@ -1,0 +1,21 @@
+package com.bridelabzPractice;
+
+public class WordCount {
+
+
+    public static void main(String[] args) {
+        String str ="we are developers wanting to bring some revolution.";
+        System.out.println(str);
+
+        int count=1;
+
+        for(int i=0;i<str.length();i++)
+        {
+            if(str.charAt(i)==' ')
+            {
+                count++;
+            }
+        }
+        System.out.println(count);
+    }
+}
