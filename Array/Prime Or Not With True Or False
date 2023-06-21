@@ -1,0 +1,38 @@
+package com.bridelabzPractice;
+
+public class PrimeOrNot {
+    static boolean isPrime(int array)
+    {
+        if (array <= 1)
+            return false;
+        for (int i = 2; i <= array / 2; i++)
+            if (array % i == 0)
+                return false;
+
+        return true;
+    }
+
+    public static void main(String args[]){
+        int [] array= {3,5,8,9,4,2,11};
+        if (isPrime(3))
+            System.out.println(" true");
+        else
+            System.out.println(" false");
+        if (isPrime(5))
+            System.out.println(" true");
+        else
+            System.out.println(" false");
+        if (isPrime(8))
+            System.out.println(" true");
+        else
+            System.out.println(" false");
+        if (isPrime(9))
+            System.out.println(" true");
+        else
+            System.out.println(" false");
+        if (isPrime(4))
+            System.out.println(" true");
+        else
+            System.out.println(" false");
+    }
+}
